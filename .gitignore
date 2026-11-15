@@ -1,0 +1,23 @@
+# ---- Secrets (NEVER upload these) ----
+.env
+
+# ---- Python ----
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ---- Uploaded files and generated vector data ----
+data/uploads/*
+!data/uploads/.gitkeep
+data/vector_store/*
+!data/vector_store/.gitkeep
+
+# ---- Editor / OS files ----
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# ---- Logs ----
+*.log
