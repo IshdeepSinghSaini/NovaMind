@@ -1,0 +1,43 @@
+Software Installation Policy
+============================
+
+Document ID: IT-006
+Company: TechNova Solutions
+Department: IT
+Document Type: Policy
+Version: 1.5
+Created: 2025-03-03
+Access Level: Employee
+
+Synthetic document created for testing. TechNova Solutions is a fictional company.
+
+1. Purpose
+----------
+This policy explains how employees can get software for their company laptops in a safe and legal way.
+
+2. Approved Software (NovaStore)
+--------------------------------
+NovaStore is the self-service software catalog on every company laptop. Software in NovaStore is licensed, security-checked and can be installed without a ticket.
+
+3. Requesting Software Not in NovaStore
+---------------------------------------
+- Raise a ticket at help.technova.internal under 'Software Request'.
+- Explain the business need and attach your manager's approval.
+- IT Security reviews the request within 3 working days.
+- If approved, the software is added to NovaStore or installed by IT.
+
+4. Prohibited Software
+----------------------
+- Unlicensed or pirated software.
+- Torrent and peer-to-peer file sharing clients.
+- Personal cloud storage sync clients.
+- Remote access tools not approved by IT.
+- Browser extensions that read all website data, unless approved.
+
+5. Admin Rights
+---------------
+Employees do not have local administrator rights on company laptops. Developers who need elevated rights for their work can request temporary elevation through the helpdesk, which lasts up to 8 hours.
+
+6. Violations
+-------------
+Unapproved software is removed automatically by device management. Repeated violations are reported to the employee's manager and HR.

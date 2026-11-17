@@ -6,6 +6,7 @@ so secrets like passwords and API keys are never written inside the code.
 """
 
 import os
+from datetime import timedelta
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -39,6 +40,20 @@ class Config:
         port=DB_PORT,
         database=DB_NAME,
     )
+
+    # ---- Login (JWT stored in a secure cookie) ----
+    JWT_SECRET_KEY = SECRET_KEY                   # used to sign (stamp) the login token
+    JWT_TOKEN_LOCATION = ["cookies"]              # token lives in a cookie, not in JavaScript
+    JWT_ACCESS_TOKEN_EXPIRES = timedelta(hours=8)  # one working day, then log in again
+    JWT_COOKIE_SECURE = not DEBUG                 # HTTPS-only cookies in production
+    JWT_COOKIE_SAMESITE = "Lax"                   # cookie not sent from other websites' forms
+    JWT_COOKIE_CSRF_PROTECT = True                # POST/PUT/PATCH/DELETE need the CSRF header too
+    JWT_SESSION_COOKIE = True                     # cookie is removed when the browser closes
+
+    # ---- Rate limiting ----
+    RATELIMIT_STORAGE_URI = "memory://"           # counters kept in memory (fine for one server)
+    RATELIMIT_HEADERS_ENABLED = True              # tell the client how many tries are left
+    LOGIN_RATE_LIMIT = os.getenv("LOGIN_RATE_LIMIT", "5 per minute;20 per hour")
 
     # ---- Folders ----
     DATA_DIR = BASE_DIR / "data"

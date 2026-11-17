@@ -1,0 +1,38 @@
+Attendance Policy
+=================
+
+Document ID: HR-006
+Company: TechNova Solutions
+Department: HR
+Document Type: Policy
+Version: 1.4
+Created: 2025-02-01
+Access Level: Employee
+
+Synthetic document created for testing. TechNova Solutions is a fictional company.
+
+1. Purpose
+----------
+This policy explains working hours, how attendance is recorded, and what happens in case of late arrival or missing attendance.
+
+2. Working Hours
+----------------
+Standard working hours are 9:30 AM to 6:30 PM, Monday to Friday, with a one-hour lunch break. Core hours are 11:00 AM to 4:00 PM; all employees must be available during core hours, whether working from the office or from home.
+
+3. Recording Attendance
+-----------------------
+- In the office, attendance is recorded automatically when you swipe your ID card at the entrance.
+- When working from home, mark your attendance in PeopleHub under 'My Attendance' before 10:00 AM.
+- When on client visits or business travel, mark 'On Duty' in PeopleHub.
+
+4. Late Arrival
+---------------
+Arriving after 10:00 AM is recorded as a late mark. 3 late marks in one calendar month result in a half-day of annual leave being deducted. Managers may excuse late marks caused by genuine emergencies.
+
+5. Attendance Regularization
+----------------------------
+If you forgot to swipe or mark attendance, submit a regularization request in PeopleHub within 5 working days. After this period, the day is treated as leave without pay unless HR approves an exception.
+
+6. Unplanned Absence
+--------------------
+If you cannot come to work unexpectedly, inform your manager by 10:00 AM by phone or NovaChat. Being absent for 3 consecutive working days without informing anyone is treated as unauthorized absence and may lead to disciplinary action.

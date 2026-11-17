@@ -10,5 +10,14 @@ python-dotenv==1.2.4
 SQLAlchemy==2.0.57
 psycopg2-binary==2.9.13
 
+# Login tokens (JWT in secure cookies) and rate limiting
+flask-jwt-extended==4.7.4
+Flask-Limiter==4.1.1
+
+# Documents: create sample PDFs, read/write Word files, read PDFs
+reportlab==5.1.0
+python-docx==1.2.0
+pymupdf==2.1
+
 # Automatic tests
 pytest==9.2.0

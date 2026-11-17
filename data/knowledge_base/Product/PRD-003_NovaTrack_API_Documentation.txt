@@ -1,0 +1,51 @@
+NovaTrack API Documentation
+===========================
+
+Document ID: PRD-003
+Company: TechNova Solutions
+Department: Product
+Document Type: Documentation
+Version: 4.2
+Created: 2025-06-15
+Access Level: Employee
+
+Synthetic document created for testing. TechNova Solutions is a fictional company.
+
+1. Overview
+-----------
+The NovaTrack REST API lets customers integrate NovaTrack with their own tools. The base URL is https://api.novatrack.example/v2. All requests and responses use JSON.
+
+2. Authentication
+-----------------
+Every request must include an API token in the Authorization header: 'Authorization: Bearer <token>'. Users create tokens under Profile > API Tokens. Tokens expire after 1 year and can be revoked at any time.
+
+3. Rate Limits
+--------------
+The API allows 600 requests per minute per API token. When the limit is exceeded, the API returns HTTP 429 with a 'Retry-After' header telling the client how many seconds to wait.
+
+4. Main Endpoints
+-----------------
+- GET /projects - list projects.
+- GET /projects/{key}/issues - list issues in a project.
+- POST /issues - create an issue.
+- GET /issues/{key} - get one issue.
+- PATCH /issues/{key} - update fields of an issue.
+- POST /issues/{key}/comments - add a comment.
+- GET /sprints/{id} - get sprint details.
+
+5. Pagination
+-------------
+List endpoints use cursor-based pagination. Use the 'limit' parameter (default 25, maximum 100) and pass the 'next_cursor' value from the response to get the next page.
+
+6. Webhooks
+-----------
+Webhooks send an HTTP POST to the customer's URL when events happen, such as issue.created, issue.updated and sprint.closed. Each webhook request is signed with an HMAC-SHA256 signature in the 'X-NovaTrack-Signature' header so customers can verify it.
+
+7. Error Codes
+--------------
+- 400 Bad Request - the request body is invalid.
+- 401 Unauthorized - missing or invalid API token.
+- 403 Forbidden - the token does not have permission.
+- 404 Not Found - the project or issue does not exist.
+- 429 Too Many Requests - rate limit exceeded.
+- 500 Internal Server Error - contact support with the 'X-Request-Id' header value.

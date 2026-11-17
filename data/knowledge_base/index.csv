@@ -1,0 +1,28 @@
+filename,relative_path,doc_code,title,department,document_type,version,created_date,access_level,file_format,file_size_bytes
+HR-001_HR_Policy.pdf,HR/HR-001_HR_Policy.pdf,HR-001,HR Policy,HR,Policy,4.0,2025-01-10,HR,pdf,5213
+HR-002_Annual_Leave_Policy.pdf,HR/HR-002_Annual_Leave_Policy.pdf,HR-002,Annual Leave Policy,HR,Policy,2.1,2025-03-01,Employee,pdf,4921
+HR-003_Work_From_Home_Policy.docx,HR/HR-003_Work_From_Home_Policy.docx,HR-003,Work From Home Policy,HR,Policy,3.0,2025-02-15,Employee,docx,37940
+HR-004_Employee_Onboarding_Guide.docx,HR/HR-004_Employee_Onboarding_Guide.docx,HR-004,Employee Onboarding Guide,HR,Guide,2.3,2025-04-05,Employee,docx,37793
+HR-005_Employee_Benefits.pdf,HR/HR-005_Employee_Benefits.pdf,HR-005,Employee Benefits,HR,Policy,2.0,2025-01-20,Employee,pdf,4474
+HR-006_Attendance_Policy.txt,HR/HR-006_Attendance_Policy.txt,HR-006,Attendance Policy,HR,Policy,1.4,2025-02-01,Employee,txt,1809
+HR-007_Salary_Bands_and_Compensation_Guidelines.pdf,HR/HR-007_Salary_Bands_and_Compensation_Guidelines.pdf,HR-007,Salary Bands and Compensation Guidelines,HR,Guideline,2026.1,2026-01-15,HR,pdf,3389
+IT-001_IT_Support_Manual.pdf,IT/IT-001_IT_Support_Manual.pdf,IT-001,IT Support Manual,IT,Manual,3.4,2025-02-10,IT,pdf,4589
+IT-002_VPN_Configuration_Guide.docx,IT/IT-002_VPN_Configuration_Guide.docx,IT-002,VPN Configuration Guide,IT,Guide,2.2,2025-03-12,Employee,docx,37763
+IT-003_Password_Reset_Guide.txt,IT/IT-003_Password_Reset_Guide.txt,IT-003,Password Reset Guide,IT,Guide,1.8,2025-01-28,Employee,txt,1872
+IT-004_Network_Troubleshooting_Manual.docx,IT/IT-004_Network_Troubleshooting_Manual.docx,IT-004,Network Troubleshooting Manual,IT,Manual,2.0,2025-04-02,IT,docx,37748
+IT-005_Cybersecurity_Guidelines.pdf,IT/IT-005_Cybersecurity_Guidelines.pdf,IT-005,Cybersecurity Guidelines,IT,Guideline,3.1,2025-02-18,Employee,pdf,4331
+IT-006_Software_Installation_Policy.txt,IT/IT-006_Software_Installation_Policy.txt,IT-006,Software Installation Policy,IT,Policy,1.5,2025-03-03,Employee,txt,1698
+FIN-001_Travel_Reimbursement_Policy.pdf,Finance/FIN-001_Travel_Reimbursement_Policy.pdf,FIN-001,Travel Reimbursement Policy,Finance,Policy,3.3,2025-02-05,Employee,pdf,4782
+FIN-002_Expense_Management_Policy.docx,Finance/FIN-002_Expense_Management_Policy.docx,FIN-002,Expense Management Policy,Finance,Policy,2.4,2025-01-25,Finance,docx,37704
+FIN-003_Invoice_Processing_Guide.pdf,Finance/FIN-003_Invoice_Processing_Guide.pdf,FIN-003,Invoice Processing Guide,Finance,Guide,1.9,2025-03-20,Finance,pdf,4230
+FIN-004_Employee_Reimbursement_Procedure.txt,Finance/FIN-004_Employee_Reimbursement_Procedure.txt,FIN-004,Employee Reimbursement Procedure,Finance,Procedure,2.1,2025-04-10,Employee,txt,1994
+PRD-001_NovaTrack_Product_Overview.pdf,Product/PRD-001_NovaTrack_Product_Overview.pdf,PRD-001,NovaTrack Product Overview,Product,Overview,4.2,2025-06-02,Employee,pdf,4342
+PRD-002_NovaTrack_Feature_Documentation.docx,Product/PRD-002_NovaTrack_Feature_Documentation.docx,PRD-002,NovaTrack Feature Documentation,Product,Documentation,4.2,2025-06-10,Employee,docx,37859
+PRD-003_NovaTrack_API_Documentation.txt,Product/PRD-003_NovaTrack_API_Documentation.txt,PRD-003,NovaTrack API Documentation,Product,Documentation,4.2,2025-06-15,Employee,txt,2179
+PRD-004_NovaTrack_Technical_Architecture_Guide.pdf,Product/PRD-004_NovaTrack_Technical_Architecture_Guide.pdf,PRD-004,NovaTrack Technical Architecture Guide,Product,Guide,4.2,2025-07-01,Employee,pdf,4601
+PRD-005_NovaTrack_Troubleshooting_Manual.docx,Product/PRD-005_NovaTrack_Troubleshooting_Manual.docx,PRD-005,NovaTrack Troubleshooting Manual,Product,Manual,4.2,2025-07-08,Employee,docx,37893
+GEN-001_Company_Overview.pdf,General/GEN-001_Company_Overview.pdf,GEN-001,Company Overview,General,Overview,5.0,2025-01-05,Public,pdf,4326
+GEN-002_Company_FAQ.docx,General/GEN-002_Company_FAQ.docx,GEN-002,Company FAQ,General,FAQ,3.2,2025-05-12,Public,docx,37668
+GEN-003_Employee_Code_of_Conduct.pdf,General/GEN-003_Employee_Code_of_Conduct.pdf,GEN-003,Employee Code of Conduct,General,Policy,4.1,2025-01-05,Public,pdf,4309
+GEN-004_Communication_Guidelines.txt,General/GEN-004_Communication_Guidelines.txt,GEN-004,Communication Guidelines,General,Guideline,2.0,2025-03-18,Public,txt,1764
+GEN-005_Workplace_Guidelines.docx,General/GEN-005_Workplace_Guidelines.docx,GEN-005,Workplace Guidelines,General,Guideline,1.6,2025-02-22,Public,docx,37595

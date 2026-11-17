@@ -1,0 +1,44 @@
+Communication Guidelines
+========================
+
+Document ID: GEN-004
+Company: TechNova Solutions
+Department: General
+Document Type: Guideline
+Version: 2.0
+Created: 2025-03-18
+Access Level: Public
+
+Synthetic document created for testing. TechNova Solutions is a fictional company.
+
+1. Purpose
+----------
+These guidelines help employees choose the right communication channel and communicate clearly and professionally.
+
+2. Choosing the Right Channel
+-----------------------------
+- Email - formal communication, external communication, approvals and anything that needs a record.
+- NovaChat - quick questions and day-to-day team discussion.
+- Video meetings - discussions that need back-and-forth conversation.
+- Ticketing portals - requests to IT, HR or Finance (so they can be tracked).
+
+3. Response Times
+-----------------
+- Reply to internal emails within 1 business day.
+- Reply to customer emails within 4 business hours.
+- NovaChat messages during core hours should be answered within 2 hours.
+
+4. Meetings
+-----------
+- Every meeting must have an agenda shared in the invitation.
+- Keep meetings to 30 minutes where possible.
+- Share notes and action items within 24 hours.
+- Avoid scheduling meetings outside core hours across time zones without agreement.
+
+5. External Communication
+-------------------------
+Only the Corporate Communications team may speak to the media or post official statements on behalf of TechNova. Employees must not share confidential information on social media.
+
+6. Tone and Etiquette
+---------------------
+Be respectful, clear and concise. Avoid writing in all capital letters. Do not use NovaChat or email to give critical feedback - discuss it privately in person or on a call.

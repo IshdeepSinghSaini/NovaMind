@@ -22,6 +22,29 @@ class Base(DeclarativeBase):
     pass
 
 
+def get_db():
+    """
+    Give the current web request its own database session.
+    The same session is reused during one request and closed at the end (close_db).
+    Tests can swap the session maker via app.config["SESSION_FACTORY"].
+    """
+    from flask import current_app, g
+
+    if "db" not in g:
+        factory = current_app.config.get("SESSION_FACTORY") or SessionLocal
+        g.db = factory()
+    return g.db
+
+
+def close_db(_error=None):
+    """Called automatically by Flask after every request."""
+    from flask import g
+
+    db = g.pop("db", None)
+    if db is not None:
+        db.close()
+
+
 def check_connection():
     """
     Try a tiny query on the database.

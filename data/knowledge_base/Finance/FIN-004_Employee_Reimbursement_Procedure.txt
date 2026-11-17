@@ -1,0 +1,51 @@
+Employee Reimbursement Procedure
+================================
+
+Document ID: FIN-004
+Company: TechNova Solutions
+Department: Finance
+Document Type: Procedure
+Version: 2.1
+Created: 2025-04-10
+Access Level: Employee
+
+Synthetic document created for testing. TechNova Solutions is a fictional company.
+
+1. Purpose
+----------
+This procedure explains, step by step, how to claim reimbursement for business expenses in ExpenseHub.
+
+2. What Can Be Claimed
+----------------------
+- Business travel (see the Travel Reimbursement Policy, FIN-001).
+- Certifications and courses from your learning budget (with manager approval).
+- Client meals and entertainment approved in advance by your manager.
+- Small office or work purchases approved by your manager.
+
+3. How to Submit a Claim
+------------------------
+- Log in to ExpenseHub and click 'New Claim'.
+- Choose the category (Travel, Learning, Client Meals or Other).
+- Enter the date, amount and a short business reason for each expense.
+- Upload clear photos or PDFs of receipts for every expense above INR 500.
+- Click 'Submit'. The claim goes to your reporting manager.
+
+4. Approval and Payment Timeline
+--------------------------------
+- Your manager approves or rejects the claim within 5 working days.
+- Finance verifies the claim and the receipts.
+- Approved claims are paid in the next payment cycle, on the 7th and the 22nd of every month, and always within 10 working days of final approval.
+- Payment is made to your salary bank account; you get an email when it is paid.
+
+5. Common Reasons for Rejection
+-------------------------------
+- Missing or unreadable receipts.
+- Claim submitted more than 30 days after the expense or trip.
+- Expense above policy limits without prior approval.
+- Personal expenses included in the claim.
+
+If a claim is rejected, correct it and submit it again.
+
+6. Help
+-------
+For questions about a claim, contact finance@technova.test with your claim number.
