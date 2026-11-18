@@ -19,5 +19,12 @@ reportlab==5.1.0
 python-docx==1.2.0
 pymupdf==2.1
 
+# AI search: embeddings (runs on your computer) and the vector database
+# NOTE: install the small CPU-only PyTorch FIRST, then the rest:
+#   pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r backend/requirements.txt
+sentence-transformers==6.3.0
+chromadb==1.5.9
+
 # Automatic tests
 pytest==9.2.0

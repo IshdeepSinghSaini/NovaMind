@@ -27,10 +27,12 @@ def create_app(overrides=None):
 
     # ---- Routes ----
     from routes.auth_routes import auth_bp
+    from routes.document_routes import document_bp
     from routes.user_routes import user_bp
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(user_bp)
+    app.register_blueprint(document_bp)
 
     register_error_handlers(app)
 
@@ -73,6 +75,10 @@ def register_error_handlers(app):
     @app.errorhandler(405)
     def method_not_allowed(_e):
         return jsonify({"error": "Method not allowed."}), 405
+
+    @app.errorhandler(413)
+    def payload_too_large(_e):
+        return jsonify({"error": f"The upload is too large. Maximum file size is {Config.MAX_UPLOAD_MB} MB."}), 413
 
     @app.errorhandler(429)
     def too_many_requests(e):

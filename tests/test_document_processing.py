@@ -202,7 +202,7 @@ def test_ingest_saves_document_and_chunks(db_session, tmp_path):
 
     assert doc.processing_status == "processed"
     assert doc.title == "Annual Leave Policy"      # read from the document
-    assert doc.doc_code == "HR-002" or doc.doc_code is None  # None if the real DB already has HR-002
+    assert doc.doc_code == "HR-002"                # read from the document header
     assert doc.version == "2.1"
     assert str(doc.doc_created_date) == "2025-03-01"
 

@@ -15,7 +15,14 @@ ALLOWED_EXTENSIONS = {"pdf", "docx", "txt"}
 
 
 class FileValidationError(Exception):
-    """Raised when a file must be rejected. The message is safe to show to the user."""
+    """
+    Raised when a file must be rejected. The message is safe to show to the user.
+    'code' is one of: invalid, unsupported_type, too_large (the API turns it into a status code).
+    """
+
+    def __init__(self, message, code="invalid"):
+        super().__init__(message)
+        self.code = code
 
 
 def get_extension(filename: str) -> str:
@@ -33,14 +40,17 @@ def validate_file(path, original_filename, max_bytes, allowed=ALLOWED_EXTENSIONS
     if ext not in allowed:
         raise FileValidationError(
             f"Unsupported file type '.{ext or '?'}'. Allowed types: "
-            + ", ".join(f".{e}" for e in sorted(allowed)) + "."
+            + ", ".join(f".{e}" for e in sorted(allowed)) + ".",
+            code="unsupported_type",
         )
 
     size = path.stat().st_size
     if size == 0:
         raise FileValidationError("The file is empty.")
     if size > max_bytes:
-        raise FileValidationError(f"The file is too large. Maximum size is {max_bytes // (1024 * 1024)} MB.")
+        raise FileValidationError(
+            f"The file is too large. Maximum size is {max_bytes // (1024 * 1024)} MB.", code="too_large"
+        )
 
     with open(path, "rb") as f:
         head = f.read(8192)

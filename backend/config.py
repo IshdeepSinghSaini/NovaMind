@@ -59,8 +59,15 @@ class Config:
     ALLOWED_EXTENSIONS = {"pdf", "docx", "txt"}
     MAX_UPLOAD_MB = int(os.getenv("MAX_UPLOAD_MB", "10"))
     MAX_UPLOAD_BYTES = MAX_UPLOAD_MB * 1024 * 1024
+    # Flask refuses any request bigger than this BEFORE reading it (+1 MB for form fields)
+    MAX_CONTENT_LENGTH = MAX_UPLOAD_BYTES + 1024 * 1024
     CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "800"))        # characters per chunk
     CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "150"))  # characters shared by neighbours
+
+    # ---- Embeddings and vector store ----
+    EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
+    EMBEDDING_BATCH_SIZE = int(os.getenv("EMBEDDING_BATCH_SIZE", "32"))
+    CHROMA_COLLECTION = os.getenv("CHROMA_COLLECTION", "novamind_chunks")
 
     # ---- Folders ----
     DATA_DIR = BASE_DIR / "data"

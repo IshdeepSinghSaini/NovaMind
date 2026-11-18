@@ -81,6 +81,33 @@ class Document(Base):
         back_populates="document", cascade="all, delete-orphan"
     )
 
+    def to_dict(self, admin=False):
+        """
+        Safe version for API replies. Never includes the stored (disk) filename or the
+        file hash. Admins additionally see who uploaded it.
+        """
+        data = {
+            "id": self.id,
+            "doc_code": self.doc_code,
+            "title": self.title,
+            "filename": self.original_filename,
+            "file_type": self.file_type,
+            "file_size": self.file_size,
+            "document_type": self.document_type,
+            "version": self.version,
+            "doc_created_date": self.doc_created_date.isoformat() if self.doc_created_date else None,
+            "department": self.department.name,
+            "access_level": self.access_level.name,
+            "processing_status": self.processing_status,
+            "chunk_count": self.chunk_count,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None,
+        }
+        if admin:
+            data["is_active"] = self.is_active
+            data["uploaded_by"] = self.uploader.username if self.uploader else None
+        return data
+
     def __repr__(self):
         return f"<Document {self.title}>"
 
