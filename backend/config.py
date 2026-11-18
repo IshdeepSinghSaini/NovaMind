@@ -55,6 +55,13 @@ class Config:
     RATELIMIT_HEADERS_ENABLED = True              # tell the client how many tries are left
     LOGIN_RATE_LIMIT = os.getenv("LOGIN_RATE_LIMIT", "5 per minute;20 per hour")
 
+    # ---- Documents and chunking ----
+    ALLOWED_EXTENSIONS = {"pdf", "docx", "txt"}
+    MAX_UPLOAD_MB = int(os.getenv("MAX_UPLOAD_MB", "10"))
+    MAX_UPLOAD_BYTES = MAX_UPLOAD_MB * 1024 * 1024
+    CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "800"))        # characters per chunk
+    CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "150"))  # characters shared by neighbours
+
     # ---- Folders ----
     DATA_DIR = BASE_DIR / "data"
     UPLOAD_DIR = DATA_DIR / "uploads"
